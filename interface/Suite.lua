@@ -59,18 +59,13 @@ function Suite:Render(Options)
     
     protectInterface()
     setPageActive("Home", true)
+    setMenuInitiated(true)
     
     
     local isGreyout, setGreyout = useState(false)
     local currentFilter, setFilter = useState("All")
     local isOpen, setOpen = useState(true)
-    
-    if not menuInitiated then
-        
-    end
 
-    setMenuInitiated(true)
-    getgenv().MENU_INITIATED = menuInitiated
 end
 
 return Suite
